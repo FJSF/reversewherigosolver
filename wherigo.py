@@ -1,6 +1,13 @@
-a = map(int,'303328')
-b = map(int,'629990')
-c = map(int,'040428')
+#!/usr/bin/python
+
+import sys
+
+if len(sys.argv) != 3 or len(sys.argv[0]) != 6 or len(sys.argv[1]) != 6 or len(sys.argv[2]) != 6:
+	sys.exit('Usage: wherigo.py AAAAA BBBBB CCCCC')
+
+a = map(int, sys.argv[1])
+b = map(int, sys.argv[2])
+c = map(int, sys.argv[3])
 
 if (c[1]+c[4]) % 2 == 0:
 	latitude = a[2]*10+b[4]+b[1]*.1+c[3]*.01+a[0]*.001+c[4]*.0001+a[5]*.00001
