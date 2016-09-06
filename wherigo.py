@@ -2,7 +2,7 @@
 
 import sys
 
-if len(sys.argv) != 3 or len(sys.argv[0]) != 6 or len(sys.argv[1]) != 6 or len(sys.argv[2]) != 6:
+if len(sys.argv) != 4 or len(sys.argv[1]) != 6 or len(sys.argv[2]) != 6 or len(sys.argv[3]) != 6:
 	sys.exit('Usage: wherigo.py AAAAA BBBBB CCCCC')
 
 a = map(int, sys.argv[1])
